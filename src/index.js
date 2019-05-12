@@ -12,6 +12,7 @@ module.exports = function scrapeUrl(url, options, cb) {
 
     var options = Object.assign(options, {
         url: url,
+        timeout: 5000,
         headers: {
             'User-Agent': options.userAgent || 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36',
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
